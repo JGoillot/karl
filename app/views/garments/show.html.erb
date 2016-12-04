@@ -1,1 +1,5 @@
 <h1><%= @garment.name %></h1>
+
+<% if @garment.photo? %>
+  <%= cl_image_tag @garment.photo.path, width: 200, height: 300, crop: :fill %>
+<% end %>

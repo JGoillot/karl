@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: 'garments#index'
+
+  mount Attachinary::Engine => "/attachinary"
 
   resources :garments, only: [:index, :show, :new, :create] do
   end
