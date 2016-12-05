@@ -1,5 +1,33 @@
-<%= link_to "Add a new clothe", new_garment_path, class: "btn btn-primary", data: { turbolinks: "false" } %>
+<div class="text-center">
+  <div class="row">
+    <div class="bottom-app">
+      <div class="container">
+        <div class="slide-app">
+          <div><i class="fa fa-search" aria-hidden="true"></i></div>
+          <div>
+            <%= link_to new_garment_path do %>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            <% end %>
+          </div>
+          <div><i class="fa fa-user" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 header-app">
+      <h1 class="title-app">Karl !</h1>
+    </div>
+    <div class="col-xs-12">
+      <div class="content-app">
+        <%= image_tag("first", class: "fit-app") %>
+        <%= image_tag("nana", class: "img-style") %>
+        <%= image_tag("rs", class: "img-style") %>
+        <%= image_tag("nico", class: "img-style") %>
+        <%= image_tag("jg", class: "img-style") %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<% @garments.each do |garment| %>
-  <h2><%= garment.name %></h2>
-<% end %>
+
+
+
